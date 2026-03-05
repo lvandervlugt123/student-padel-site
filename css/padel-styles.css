@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap');
 
 * {
@@ -47,7 +46,6 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    animation: fadeOutLanding 0.8s ease-in-out 4.5s forwards;
 }
 
 .landing-content {
@@ -140,18 +138,10 @@ body {
 /* ==================== MAIN CONTENT ==================== */
 
 .main-content {
-    opacity: 0;
-    animation: fadeInContent 0.8s ease-in-out 4.5s forwards;
+    opacity: 1;
 }
 
-@keyframes fadeInContent {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 
 /* ==================== HEADER ==================== */
 
@@ -776,6 +766,3 @@ footer p {
         font-size: 1rem;
     }
 }
-=======
-
->>>>>>> 5c8bf4aa6ab02f024fc077a0087cdb3610cf7b8d
