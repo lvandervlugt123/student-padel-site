@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Padel Association - Boston</title>
+    <link rel="stylesheet" href="css/padel-styles.css">
+</head>
+<body>
+    <!-- LANDING PAGE -->
+    <div class="landing-container" id="landingContainer">
+        <div class="landing-content">
+            <h1>Welcome Boston Padel Students</h1>
+            <p>Join the Premier Padel Community at Padel Hub Boston</p>
+            <button class="enter-btn" onclick="enterSite()">ENTER THE SITE</button>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content" id="mainContent">
+        <!-- HEADER -->
+        <header>
+            <nav class="container">
+                <div class="logo">🎾 Student Padel Hub</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#why">Why Join</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section class="hero container">
+            <div class="hero-content">
+                <h1>Welcome to Padel Hub Boston</h1>
+                <p>Join Boston's premier student padel community</p>
+                <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Join Us Today</button>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">🏟️</div>
+                    <h3>What is Padel?</h3>
+                    <p>Padel is a dynamic racquet sport combining elements of tennis and squash. It's played on an enclosed court half the size of a tennis court, making it more social and accessible for all skill levels.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">👥</div>
+                    <h3>Our Mission</h3>
+                    <p>We bring together Boston's student community to share passion for padel, build friendships, and develop skills in a welcoming and inclusive environment.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌟</div>
+                    <h3>Why Padel?</h3>
+                    <p>Padel is fun, fast-paced, and requires less experience than tennis. It's perfect for stress relief, fitness, and making new friends while enjoying a rapidly growing sport.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY JOIN SECTION -->
+        <section id="why" class="container">
+            <h2 class="section-title">Why Join Our Club?</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">💪</div>
+                    <h3>Get Fit</h3>
+                    <p>Padel is an excellent cardiovascular workout that improves agility, speed, and endurance while being fun.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🤝</div>
+                    <h3>Build Community</h3>
+                    <p>Meet fellow students who share your passion. We organize tournaments, socials, and group outings throughout the year.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📈</div>
+                    <h3>Improve Skills</h3>
+                    <p>Learn from experienced players and develop your game with structured practice sessions and coaching.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🎉</div>
+                    <h3>Have Fun</h3>
+                    <p>Enjoy a vibrant, inclusive community where everyone is welcome, regardless of experience level.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTS SECTION -->
+        <section id="events" class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            
+            <div class="event-item">
+                <h4>🏆 Beginner's Tournament</h4>
+                <div class="date">March 15, 2026 | 2:00 PM - 6:00 PM</div>
+                <p>A fun tournament for players of all skill levels. No experience necessary! Sign up before March 12th.</p>
+                <button class="btn">Register</button>
+            </div>
+
+            <div class="event-item">
+                <h4>🎾 Weekly Practice Sessions</h4>
+                <div class="date">Every Tuesday & Thursday | 6:00 PM - 8:00 PM</div>
+                <p>Join us for regular practice sessions at Padel Hub Boston. All skill levels welcome. $10 per session.</p>
+                <button class="btn">Join Practice</button>
+            </div>
+
+            <div class="event-item">
+                <h4>🍕 Social & Networking Event</h4>
+                <div class="date">March 20, 2026 | 7:00 PM</div>
+                <p>Casual hangout with pizza and drinks. Great way to connect with other club members off the court!</p>
+                <button class="btn">RSVP</button>
+            </div>
+
+            <div class="event-item">
+                <h4>👨‍🏫 Coaching Session with Pro</h4>
+                <div class="date">March 28, 2026 | 5:00 PM - 6:30 PM</div>
+                <p>Learn from a professional coach. Topics: grip, footwork, and strategy. Limited spots available!</p>
+                <button class="btn">Enroll</button>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <textarea rows="5" placeholder="Tell us about yourself or ask a question..." required></textarea>
+                <button type="submit" class="btn" style="width: 100%; border: none;">Send Message</button>
+            </form>
+            <div style="text-align: center; margin-top: 3rem; color: var(--text-dark);">
+                <p style="margin-bottom: 1rem;"><strong>📍 Location:</strong> Padel Hub Boston, Boston, MA</p>
+                <p style="margin-bottom: 1rem;"><strong>📧 Email:</strong> studentpadel@padelhubboston.com</p>
+                <p><strong>📱 Instagram:</strong> @BostonStudentPadel</p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Student Padel Association - Padel Hub Boston. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function enterSite() {
+            const landing = document.getElementById('landingContainer');
+            const content = document.getElementById('mainContent');
+            
+            landing.style.animation = 'fadeOutLanding 0.5s ease-in-out forwards';
+            setTimeout(() => {
+                content.style.opacity = '1';
+                content.style.pointerEvents = 'auto';
+            }, 500);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! We\'ll get back to you soon.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
